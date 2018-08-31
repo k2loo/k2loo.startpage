@@ -1,0 +1,94 @@
+:root{
+	font-size: 16px;
+}
+
+body, html {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	background-image: url("https://source.unsplash.com/featured/1920x1080");
+	height:100%;
+	background-position: center;
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+
+hr{
+	color: rgba(228,0,43,1);
+	border-width: 1px;
+	border-style: solid;
+}
+
+#grid-items{
+	display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 30px;
+	grid-template-areas: "group-1 group-2 group-3";
+	padding-top:100px;
+	margin: auto;
+	max-width: 800px;
+}
+
+#group-1{
+	grid-area: group-1;
+}
+
+#group-2{
+	grid-area: group-2;
+}
+
+#group-3{
+	grid-area: group-3;
+}
+
+.card{
+	padding: 30px;
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 0px 3px 18px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	
+}
+
+.card-head{
+	text-transform: uppercase;
+	color: rgba(228,0,43,1)
+}
+
+.card-content a{
+	text-transform: lowercase;
+	display: block;
+	text-decoration: none;
+	color: rgba(63,21,79,1);
+	border-top: 2px;
+}
+
+.feather {
+  width: 36px;
+  height: 36px;
+  stroke: currentColor;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+	fill: none;
+}
+
+@media screen and (max-width: 600px){
+	#grid-items{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-gap: 0px;
+		grid-template-areas: "group-1"
+													"group-2"
+													"group-3";
+		padding-top:0px;
+	}
+	
+	.card{
+		border-radius: 0px;
+	}
+	.feather{
+		display:none;
+	}
+}
