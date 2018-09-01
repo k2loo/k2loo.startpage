@@ -25,9 +25,8 @@ a{
 }
 
 a:hover{
-	/* font-weight: 600; */
-	border-bottom: 2px rgba(228,0,43,1);
 	background-color: rgba(200,200,200,0.5);
+	transition: background-color .05s;
 }
 
 #logo{
