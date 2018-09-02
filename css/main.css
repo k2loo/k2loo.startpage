@@ -58,7 +58,7 @@ a:hover{
   grid-gap: 30px;
 	grid-template-areas: "group-1 group-2 group-3";
 	margin: auto;
-	padding-top:200px;
+	padding-top:150px;
 	max-width: 800px;
 }
 
