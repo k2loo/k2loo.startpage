@@ -135,30 +135,30 @@ a:hover{
 	fill: none;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
 	#grid-items{
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-gap: 0px;
-		grid-template-areas: "group-1"
-													"group-2"
-													"group-3";
-		padding-top:0px;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-row-gap: 50px;
+		/* grid-column-gap:15px; */
+		grid-template-areas: "group-1 group-2"
+													"group-3 group-4";
+		padding:50px 15px;
 	}
 	
 	.card-head{
-		border-radius: 0px;
+		/* border-radius: 0px; */
 	}
 	
 	.card-content{
-		border-radius: 0px;
+		/* border-radius: 0px; */
 	}
 	
 	.icon{
-		display:none;
+		/* display:none; */
 	}
 	
 	#logo{
-		display:none;
+		/* display:none; */
 	}
 }
