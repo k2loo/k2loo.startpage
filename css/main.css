@@ -1,5 +1,7 @@
 :root{
   font-size: 16px;
+  --cherry: rgba(228,0,43,1);
+  --plum: rgba(63,21,79,1);
 }
 
 body, html {
@@ -14,12 +16,7 @@ body, html {
 }
 
 a{
-  text-decoration: none;
-  color: rgba(63,21,79,1);
-}
-
-a:hover{
-  background-color: rgba(200, 200, 200, 0.6);
+  
 }
 
 .wrapper{
@@ -56,26 +53,9 @@ a:hover{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-gap: 15px;
-  grid-template-areas: "group-1 group-2 group-3 group-4";
   margin: auto;
   padding-top:75px;
-  max-width: 700px;
-}
-
-#group-1{
-  grid-area: group-1;
-}
-
-#group-2{
-  grid-area: group-2;
-}
-
-#group-3{
-  grid-area: group-3;
-}
-
-#group-4{
-  grid-area: group-4;
+  max-width: 900px;
 }
 
 .card{
@@ -89,7 +69,7 @@ a:hover{
   justify-content: center;
   text-transform: uppercase;
   color: rgba(228,0,43,1);
-  background-color: rgba(63,21,79,1);
+  background-color: var(--plum);
   border-radius: 10px 10px 0px 0px;
   height: 50px;
 }
@@ -103,14 +83,14 @@ a:hover{
   width:30px;
   height:30px;
   z-index: 10;
-  background-color: rgba(63,21,79,1);
+  background-color: var(--plum);
   padding:20px;
   border-radius:50px;
   box-shadow: 0px 3px 18px rgba(0,0,0,0.3);
 }
 
 .card-content{
-  border-top: 3px rgba(228,0,43,1);
+  border-top: 3px var(--cherry);
   border-top-style: solid;
   background-color: rgba(255,255,255,0.8);
   min-height: 230px;
@@ -123,6 +103,11 @@ a:hover{
   display: block;
   padding-left: 10px;
   border-radius:5px;
+  text-decoration: none;
+}
+
+.card-content a:hover{
+  color: var(--cherry);
 }
 
 .feather {
@@ -143,5 +128,8 @@ a:hover{
     grid-template-areas: "group-1 group-2"
                          "group-3 group-4";
     padding:50px 15px;
+  }
+  #logo{
+    display:none;
   }
 }
