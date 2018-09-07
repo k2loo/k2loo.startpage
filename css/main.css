@@ -15,10 +15,6 @@ body, html {
   background-size: cover;
 }
 
-a{
-  
-}
-
 .wrapper{
   height:100%;
 }
@@ -125,8 +121,6 @@ a{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 50px;
-    grid-template-areas: "group-1 group-2"
-                         "group-3 group-4";
     padding:50px 15px;
   }
   #logo{
