@@ -13,6 +13,7 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .wrapper{
@@ -24,7 +25,7 @@ body, html {
   width:100vw;
   justify-content: center;
   align-items: center;
-  position:fixed;
+  position:relative;
   bottom:0px;
 }
 
@@ -46,11 +47,13 @@ body, html {
 
 #grid-items{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4,1fr);
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   grid-template-rows: 1fr;
-  grid-gap: 15px;
+  grid-column-gap: 15px;
+  grid-row-gap: 45px;
   margin: auto;
-  padding-top:75px;
+  padding:75px 15px 0px 15px;
   max-width: 900px;
 }
 
@@ -58,6 +61,7 @@ body, html {
   padding: 0px;
   box-shadow: 0px 3px 18px rgba(0,0,0,0.3);
   border-radius: 10px;
+  background-color: rgba(255,255,255,0.8);
 }
 
 .card-head{
@@ -88,7 +92,6 @@ body, html {
 .card-content{
   border-top: 3px var(--cherry);
   border-top-style: solid;
-  background-color: rgba(255,255,255,0.8);
   min-height: 230px;
   padding: 20px;
   border-radius: 0px 0px 10px 10px;
@@ -116,9 +119,15 @@ body, html {
   fill: none;
 }
 
+@media screen and (max-width: 1000px){
+  #grid-items{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
 @media screen and (max-width: 700px){
   #grid-items{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: 1fr 1fr;
     grid-row-gap: 50px;
     padding:50px 15px;
