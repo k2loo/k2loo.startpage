@@ -1,0 +1,47 @@
+:root{
+font-size:10px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+--color1: rgba(180, 47, 216,1);
+--color2: rgba(48, 193, 221);
+--color3: rgba(150,150,150,1);
+
+}
+
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: auto;
+}
+
+.item{
+	display:inline-block;
+	font-size: 1.8rem;
+	border: 2px solid var(--color3);
+	border-radius: 1rem;
+	padding: 1rem;
+	margin:1rem;
+	text-align: center;
+	color: var(color1);
+	font
+}
+
+.icon{
+	width: 15rem;
+	height: 15rem;
+}
+
+.stroke{
+	stroke: var(--color2);
+}
+
+.fill{
+	fill: var(--color2);
+}
+
+.strokeandfill{
+	stroke: var(--color2);
+	fill: var(--color1);
+
+}
