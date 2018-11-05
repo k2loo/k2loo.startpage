@@ -91,7 +91,6 @@ body, html {
 .card-content{
   border-top: 3px var(--cherry);
   border-top-style: solid;
-  min-height: 230px;
   padding: 20px;
   border-radius: 0px 0px 10px 10px;
 }
