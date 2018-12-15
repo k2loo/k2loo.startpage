@@ -1,13 +1,13 @@
 :root{
-  font-size: 16px;
+  font-size: 10px;
   --cherry: rgba(228,0,43,1);
   --plum: rgba(63,21,79,1);
 }
 
 body, html {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 2rem;
+  line-height: 3rem;
   background-image: url("https://source.unsplash.com/featured/1920x1080");
   height:100%;
   background-position: center;
@@ -53,7 +53,7 @@ body, html {
   grid-row-gap: 45px;
   margin: auto;
   padding:75px 15px 0px 15px;
-  max-width: 900px;
+  max-width: 1100px;
 }
 
 .card{
@@ -95,9 +95,19 @@ body, html {
   border-radius: 0px 0px 10px 10px;
 }
 
+.card-content div{
+	display: block;
+}
+
+.card-content img{
+	vertical-align: baseline;
+	height:16px;
+	width:auto;
+}
+
 .card-content a{
-  text-transform: lowercase;
-  display: block;
+  text-transform: capitalize;
+  display: inline;
   padding-left: 10px;
   border-radius:5px;
   text-decoration: none;
