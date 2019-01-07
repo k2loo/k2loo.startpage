@@ -47,13 +47,17 @@ body, html {
 
 #grid-items{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(5,1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 15px;
   grid-row-gap: 45px;
   margin: auto;
   padding:75px 15px 0px 15px;
-  max-width: 900px;
+  max-width: 1200px;
+}
+#inspo{
+	grid-column: span 2;
+	align-self: start;
 }
 
 .card{
@@ -65,6 +69,8 @@ body, html {
 
 .card-head{
   display:flex;
+	border-bottom: 3px var(--cherry);
+  border-bottom-style: solid;
   justify-content: center;
   text-transform: uppercase;
   color: rgba(228,0,43,1);
@@ -89,14 +95,15 @@ body, html {
 }
 
 .card-content{
-  border-top: 3px var(--cherry);
-  border-top-style: solid;
   padding: 20px;
-  border-radius: 0px 0px 10px 10px;
+  /* border-radius: 0px 0px 10px 10px; */
+	display: inline-block;
+
 }
 
 .card-content div{
 	display: block;
+	
 }
 
 .card-content img{
