@@ -1,2 +1,3 @@
-# k2loo.github.io
+# k2loo.startpage
 my new tab page
+hosted at k2loo.netlify.com
