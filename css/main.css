@@ -112,14 +112,24 @@ body, html {
 .card-content a{
   text-transform: capitalize;
   display: inline;
-  padding-left: 10px;
+  padding-left: 5px;
+	padding-right: 5px;
+	margin-left: 5px;
   border-radius:5px;
   text-decoration: none;
 	color: var(--plum);
+	/* underline animation */
+	background-image: linear-gradient(var(--cherry), var(--cherry));
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .2s;
+	/* end underline animation */
 }
 
 .card-content a:hover{
-  color: var(--cherry);
+	background-size: 100% 2px;
+	color: var(--cherry);
 }
 
 .feather {
