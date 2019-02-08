@@ -154,6 +154,7 @@ body, html {
     grid-row-gap: 50px;
     padding:50px 15px;
   }
+
   #logo{
     display:none;
   }
