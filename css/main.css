@@ -124,12 +124,12 @@ body,html{
 	background-repeat: no-repeat;
 	background-size: 0% 2px;
 	transition: background-size .2s;
-	/* end underline animation */
 }
 
 .card-content a:hover{
 	background-size: 100% 2px;
 	color: var(--cherry);
+	/* end underline animation */
 }
 
 .feather {
@@ -153,9 +153,5 @@ body,html{
 		grid-template-columns: repeat(2,1fr);
 		grid-row-gap: 50px;
 		padding:50px 15px;
-	}
-
-	#logo{
-		display:none;
 	}
 }
