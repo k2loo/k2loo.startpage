@@ -14,35 +14,11 @@ body,html{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	/* unsplash reference at https://source.unsplash.com/ */
 }
 
 .wrapper{
 	height:100%;
-}
- 
-#logo{
-	display:flex;
-	width:100vw;
-	justify-content: center;
-	align-items: center;
-	position:relative;
-	bottom:0px;
-}
-
-#logo-img {
-	display:flex;
-	margin:50px;
-	width:100px;
-	height:100px;
-	background-color: rgba(255,255,255,0.8);
-	box-shadow: 0px 3px 18px rgba(0,0,0,0.3);
-	border-radius: 50px;
-	justify-content: center;
-	align-items: center;
-}
-
-#logo-img img{
-	width: 50px;
 }
 
 #grid-items{
