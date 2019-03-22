@@ -11,6 +11,26 @@
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
+	<script>
+		const getImage = url => {
+			return fetch(url).then(response => response.url)
+		}
+
+		const loadImageWithPreview = async (url, height = 1080, width = 1920) => {
+			let imageUrl = await getImage(url);
+			document.documentElement.style.setProperty('--image', `url(${imageUrl})`);
+
+			let imageUrl2 = imageUrl.split("&").map(para => (para.match(/^w=\d/) && `w=${width}`) || (para.match(/^h=\d/) && `h=${height}`) || para).join("&");
+
+			const img = new Image();
+			img.onload = function () {
+				document.documentElement.style.setProperty('--image', `url(${imageUrl2})`);
+			}
+			img.src = imageUrl2;
+		}
+
+		loadImageWithPreview("https://source.unsplash.com/featured/192x108");
+	</script>
 </head>
 
 <body>
