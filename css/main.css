@@ -8,8 +8,8 @@ body,html{
 	font-family: 'Nunito', sans-serif;
 	font-size: 2rem;
 	line-height: 3rem;
-	background-image: url("https://source.unsplash.com/random/1800x1000");
-	/* background-image: var(--image); */
+	/* background-image: url("https://source.unsplash.com/random/1800x1000"); */
+	background-image: var(--image);
 	height:100%;
 	background-position: center;
 	background-repeat: no-repeat;
