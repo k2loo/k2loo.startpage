@@ -39,9 +39,9 @@ body, .wrapper{
 	padding:75px 15px 0px 15px;
 	max-width: 1200px;
 }
-#inspo{
+
+.span-2{
 	grid-column: span 2;
-	align-self: start;
 }
 
 .card{

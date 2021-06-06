@@ -20,7 +20,7 @@
 		}
 	</style>
 	<link rel="stylesheet" href="css/normalize.min.css">
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -47,7 +47,7 @@
 			<div id="comms" class="card">
 				<div class="card-head">
 					<div class="icon">
-						<i data-feather="send"></i>
+						<i data-feather="message-circle"></i>
 					</div>
 				</div>
 				<div class="card-content">
@@ -65,7 +65,7 @@
 			<div id="work" class="card">
 				<div class="card-head">
 					<div class="icon">
-						<i data-feather="cloud"></i>
+						<i data-feather="database"></i>
 					</div>
 				</div>
 				<div class="card-content">
@@ -79,10 +79,10 @@
 				</div>
 			</div>
 			<!-- end card -->
-			<div id="inspo" class="card">
+			<div id="inspo" class="card span-2">
 				<div class="card-head">
 					<div class="icon">
-						<i data-feather="zap"></i>
+						<i data-feather="activity"></i>
 					</div>
 				</div>
 				<div class="card-content">
@@ -124,6 +124,23 @@
 				</div>
 			</div>
 			<!-- end card -->
+			<div id="weather" class="card span-2">
+				<div class="card-head">
+					<div class="icon">
+						<i data-feather="cloud-lightning"></i>
+					</div>
+				</div>
+				<div class="card-content">
+					<!-- from weatherwidget.io -->
+					<a class="weatherwidget-io" href="https://forecast7.com/en/34d05n118d24/los-angeles/?unit=us" data-font="Noto Sans" data-days="3" data-highcolor="rgba(232, 15, 57, 1)" data-lowcolor="#8316c4">Los Angeles, CA, USA</a>
+					<script>
+						!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+					</script>
+				</div>
+			</div>
+			<!-- end card -->
+
+
 		</div>
 		<!-- end grid-items -->
 	</div>
