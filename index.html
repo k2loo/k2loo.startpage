@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="" lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -124,18 +124,17 @@
 				</div>
 			</div>
 			<!-- end card -->
-			<div id="weather" class="card span-2">
+			<div id="weather" class="card span-3">
 				<div class="card-head">
 					<div class="icon">
 						<i data-feather="cloud-lightning"></i>
 					</div>
 				</div>
 				<div class="card-content">
-					<!-- from weatherwidget.io -->
-					<a class="weatherwidget-io" href="https://forecast7.com/en/34d05n118d24/los-angeles/?unit=us" data-font="Noto Sans" data-days="3" data-highcolor="rgba(232, 15, 57, 1)" data-lowcolor="#8316c4">Los Angeles, CA, USA</a>
-					<script>
-						!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
-					</script>
+					<div id="openweathermap-widget-21"></div>
+					<script src='//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/d3.min.js'></script>
+					<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = []; window.myWidgetParam.push({ id: 21, cityid: '5368361', appid: '46d5ce536174639a980841de6ff8f0a0', units: 'imperial', containerid: 'openweathermap-widget-21', }); (function () { var script = document.createElement('script'); script.async = true; script.charset = "utf-8"; script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s); })();</script>
+
 				</div>
 			</div>
 			<!-- end card -->
@@ -145,6 +144,7 @@
 		<!-- end grid-items -->
 	</div>
 	<!-- end wrapper -->
+	<link href="/css/openweathermap.css" rel="stylesheet">
 	<script>
 		feather.replace()
 	</script>
