@@ -3,12 +3,11 @@
 	--primary: rgba(63, 21, 79, 1);
 	--secondary: rgba(45, 100, 20, 1);
 	--secondary-dark: rgb(17, 23, 15);
-	--secondary-opaque: rgba(220, 240, 200, 0.9);
+	--secondary-opaque: rgba(237, 247, 226, 0.8);
 	--dark: rgba(31, 31, 31, 1);
 	--dark-ish: rgba(180, 180, 180, 1);
 	--light: rgba(255, 255, 255, 1);
 	--light-opaque: rgba(255, 255, 255, 0.8);
-
 }
 
 html {
@@ -64,17 +63,8 @@ body,
 	background-color: var(--light-opaque);
 }
 
-.card:hover {
-	background-color: var(--secondary-opaque);
-}
-
 .card:hover>.card-head>.icon {
 	color: var(--secondary);
-	/* background-color: var(--secondary-dark); */
-}
-
-.card:hover>.card-head {
-	/* background-color: var(--secondary-dark); */
 }
 
 .card-head {
