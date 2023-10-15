@@ -8,6 +8,8 @@
 	--dark-ish: rgba(180, 180, 180, 1);
 	--light: rgba(255, 255, 255, 1);
 	--light-opaque: rgba(255, 255, 255, 0.8);
+	--box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.3);
+	--transition: all 0.3s;
 }
 
 html {
@@ -58,13 +60,19 @@ body,
 
 .card {
 	padding: 0px;
-	box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.3);
+	box-shadow: var(--box-shadow);
 	border-radius: 15px 15px 10px 10px;
 	background-color: var(--light-opaque);
 }
 
+.card:hover {
+	--box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.6);
+	transition: var(--transition);
+}
+
 .card:hover>.card-head>.icon {
 	color: var(--secondary);
+	transition: var(--transition);
 }
 
 .card-head {
@@ -91,7 +99,7 @@ body,
 	background-color: var(--dark);
 	padding: 20px;
 	border-radius: 100px;
-	box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.3);
+	box-shadow: var(--box-shadow);
 }
 
 .card-content {
