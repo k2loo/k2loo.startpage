@@ -10,6 +10,7 @@
 	--light-opaque: rgba(255, 255, 255, 0.8);
 	--box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.3);
 	--transition: all 0.3s;
+	--box-shadow: 0px 3px 18px rgba(0, 0, 0, 0.6);
 }
 
 html {
@@ -71,8 +72,24 @@ body,
 }
 
 .card:hover>.card-head>.icon {
-	color: var(--secondary);
+	/* color: var(--secondary); */
+	color: var(--light);
 	transition: var(--transition);
+}
+
+.card:hover>.card-content img {
+	mix-blend-mode: normal;
+}
+
+.hover {
+	--transition: all 0.3s;
+	--pink-shadow: 0px 3px 18px #000;
+	box-shadow: var(--pink-shadow);
+	background-color: var(--light);
+}
+
+.hover-icon {
+	color: red;
 }
 
 .card-head {
@@ -115,6 +132,7 @@ body,
 	vertical-align: baseline;
 	height: 16px;
 	width: auto;
+	mix-blend-mode: luminosity;
 }
 
 .card-content a {
@@ -125,9 +143,9 @@ body,
 	margin-left: 5px;
 	border-radius: 5px;
 	text-decoration: none;
-	color: var(--primary);
+	color: var(--dark);
 	/* underline animation */
-	background-image: linear-gradient(var(--secondary), var(--secondary));
+	background-image: linear-gradient(var(--dark), var(--dark));
 	background-position: 0% 100%;
 	background-repeat: no-repeat;
 	background-size: 0% 2px;
@@ -136,7 +154,7 @@ body,
 
 .card-content a:hover {
 	background-size: 100% 2px;
-	color: var(--secondary);
+	color: #000;
 	/* end underline animation */
 }
 

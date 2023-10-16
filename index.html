@@ -148,6 +148,20 @@
 	<script>
 		feather.replace()
 	</script>
+	<script>
+		const cards = document.querySelectorAll('.card');
+		const icons = document.querySelectorAll('.icon');
+
+		cards.forEach(card => {
+			card.addEventListener('mouseenter', () => {
+				card.classList.add('hover');
+			});
+			card.addEventListener('mouseleave', () => {
+				card.classList.remove('hover');
+			});
+			card.style.setProperty('transition', 'all 0.3s');
+		});
+	</script>
 </body>
 
 </html>

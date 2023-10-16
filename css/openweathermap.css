@@ -1,41 +1,54 @@
-#openweathermap-widget-21{
+#openweathermap-widget-21 {
+	margin-left: 30px;
+}
 
-}
-.widget-left{
+.widget-left {
 	background-color: transparent;
-	box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.0);
+	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
 }
-div.widget-left-menu{
+
+div.widget-left-menu {
 	display: none;
 	background-color: transparent;
 }
-.widget-left-menu a{
+
+.widget-left-menu a {
 	background-image: none;
 }
-.widget-left__calendar{
+
+.widget-left__calendar {
 	margin: 0 0 0 20px;
 }
-.calendar__item img{
+
+.calendar__item img {
 	width: 40px;
 	height: auto;
 }
-.weather-left-card__row2 > p{
+
+.weather-left-card__row2>p {
 	/* padding-bottom: 10px; */
 	padding-top: 0px;
 }
-.weather-left-card__wind{
+
+.weather-left-card__wind {
 	margin-top: 20px;
 }
-.weather-left-card__img{
+
+.weather-left-card__img {
 	display: none;
 }
-.weather-left-card__means{
+
+.weather-left-card__means {
 	text-align: start;
 }
-.widget-left__body{
+
+.widget-left__body {
 	/* width: 650px; */
 }
-.weather-left-card__degree{
+
+.weather-left-card__degree {
 	font-size: 2.4rem;
 	vertical-align: super;
+	letter-spacing: 0.1px;
+	margin-left: 5px;
 }
