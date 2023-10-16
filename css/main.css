@@ -36,11 +36,11 @@ body,
 	background-attachment: fixed;
 	/*
 		unsplash reference at https://source.unsplash.com/ 
-		https://source.unsplash.com/random
-		https://source.unsplash.com/user/wsanter
-		https://source.unsplash.com/random/300×300
-		https://source.unsplash.com/random/?city,night
-		https://source.unsplash.com/random/900×700/?fruit
+			https://source.unsplash.com/random
+			https://source.unsplash.com/user/wsanter
+			https://source.unsplash.com/random/300×300
+			https://source.unsplash.com/random/?city,night
+			https://source.unsplash.com/random/900×700/?fruit
 	*/
 }
 
@@ -73,7 +73,7 @@ body,
 	border-radius: 15px 15px 10px 10px;
 	background-color: var(--light-opaque);
 	/* background-color: var(--light); */
-	opacity: 0.9;
+	opacity: 0.97;
 }
 
 .card:hover {
