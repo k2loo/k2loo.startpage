@@ -93,7 +93,7 @@ body,
 
 .hover {
 	--transition: all 0.3s;
-	box-shadow: var(--box-shadow-hover);
+	/* box-shadow: var(--box-shadow-hover); */
 	background-color: var(--light);
 	opacity: 1;
 }
