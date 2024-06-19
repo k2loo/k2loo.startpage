@@ -50,10 +50,6 @@ div.widget-left-menu {
 	text-align: start;
 }
 
-.widget-left__body {
-	/* width: 650px; */
-}
-
 .weather-left-card__degree {
 	font-size: 2.4rem;
 	vertical-align: super;
