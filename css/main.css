@@ -139,6 +139,7 @@ body,
 	height: 16px;
 	width: auto;
 	mix-blend-mode: luminosity;
+	opacity: 0.6;
 }
 
 .card-content a {

@@ -2,6 +2,14 @@
 	margin-left: 30px;
 }
 
+.weather-left-card__number,
+.calendar__ite,
+.weather-left-card__means,
+.axis,
+.calendar__item {
+	font-family: 'Nunito', sans-serif !important;
+}
+
 .widget-left {
 	background-color: transparent;
 	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
