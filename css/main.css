@@ -65,12 +65,10 @@ body,
 
 .card:hover {
 	--box-shadow: 0px 3px 35px rgba(0, 0, 0, 0.4);
-
 }
 
 .card:hover>.card-head>.icon {
 	color: var(--light);
-
 }
 
 .card:hover>.card-content img {
@@ -121,7 +119,6 @@ body,
 
 .card-content>div {
 	margin-left: 5px;
-	;
 }
 
 .card-content img {
