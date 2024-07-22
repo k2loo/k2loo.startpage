@@ -1,5 +1,5 @@
 #openweathermap-widget-21 {
-	margin-left: 45px;
+	margin: 10px 0 0 35px;
 	background-image: none;
 }
 
@@ -13,7 +13,7 @@
 
 .widget-left {
 	background-color: transparent;
-	box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+	box-shadow: unset;
 }
 
 div.widget-left-menu {
@@ -26,7 +26,7 @@ div.widget-left-menu {
 }
 
 .widget-left__calendar {
-	margin: 0 0 0 20px;
+	margin: 15px 0 0 20px;
 }
 
 .calendar__item img {
